@@ -32,6 +32,8 @@ nav {
 
 .list-links {
   list-style: none;
+  display: flex;
+  gap: 30px;
 }
 
 .list-links li {
@@ -40,4 +42,28 @@ nav {
 .list-links li a {
   color: var(--text-secondary-color);
   text-decoration: none;
+  font-weight: var(--menu-text-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navagation-menu {
+    margin-top: 0;
+  }
+  .navagation-menu label {
+    display: none;
+  }
+
+  .navagation-menu nav {
+    display: block;
+  }
+  .navagation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  .navagation-menu ul li {
+    margin: 0;
+  }
 }
